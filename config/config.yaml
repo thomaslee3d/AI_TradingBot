@@ -1,0 +1,39 @@
+import yaml
+
+class Config:
+    def __init__(self, config_file):
+        with open(config_file, 'r') as f:
+            self.config = yaml.safe_load(f)
+
+    def get(self, key, default=None):
+        return self.config.get(key, default)
+
+# config/config.yaml
+
+# Binance API Credentials
+BINANCE_API_KEY: ${BINANCE_API_KEY}
+BINANCE_SECRET_KEY: ${BINANCE_SECRET_KEY}
+
+# Twitter API Credentials
+TWITTER_API_KEY: ${TWITTER_API_KEY}
+TWITTER_API_SECRET: ${TWITTER_API_SECRET}
+TWITTER_ACCESS_TOKEN: ${TWITTER_ACCESS_TOKEN}
+TWITTER_ACCESS_SECRET: ${TWITTER_ACCESS_SECRET}
+
+# Trading Parameters
+SYMBOL: 'BTC/USDT'
+TIMEFRAME: '1h'
+ORDER_AMOUNT: 0.001
+
+# Model Parameters
+MODEL_PATH: 'models/trained_model.h5'
+SCALER_PATH: 'models/scaler.pkl'
+
+# Logging
+LOG_FILE: 'logs/trading_bot.log'
+
+# Backtesting Parameters
+BACKTEST_INITIAL_BALANCE: 10000
+
+# Scheduler Settings
+SCHEDULE_INTERVAL_MINUTES: 60

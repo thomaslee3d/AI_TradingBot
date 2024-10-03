@@ -1,0 +1,59 @@
+# Data Manipulation and Analysis
+pandas==1.5.3
+numpy==1.24.3
+
+# Data Visualization
+matplotlib==3.7.1
+seaborn==0.12.2
+
+# Machine Learning
+scikit-learn==1.2.2
+xgboost==1.7.6
+
+# Deep Learning
+tensorflow==2.12.0
+keras==2.12.0
+
+# Technical Analysis
+TA-Lib==0.4.24
+
+# Cryptocurrency Trading and Exchange APIs
+ccxt==3.5.0
+
+# Reinforcement Learning
+stable-baselines3==1.9.0
+gym==0.26.2
+
+# Backtesting
+backtrader==1.9.78.123
+
+# Scheduling
+schedule==1.2.0
+
+# Logging
+loguru==0.7.0
+
+# Environment Variables Management
+python-dotenv==1.0.0
+
+# Additional Utilities
+requests==2.31.0
+tweepy==4.15.0
+textblob==0.17.1
+
+# Optional: GPU Support for TensorFlow (if using a GPU)
+# tensorflow-gpu==2.12.0
+
+# Note:
+# 1. TA-Lib requires the underlying C library to be installed on your system.
+#    - **Windows:** You can download precompiled binaries from [TA-Lib Downloads](https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib) and install using pip.
+#    - **macOS:** Install via Homebrew with `brew install ta-lib`
+#    - **Linux:** Install using your package manager, e.g., `sudo apt-get install ta-lib`
+#
+#    After installing the C library, you can install the Python wrapper with:
+#    ```bash
+#    pip install TA-Lib
+#    ```
+#
+# 2. If you're using a GPU for TensorFlow, ensure that your system has the necessary CUDA and cuDNN libraries installed. Uncomment the `tensorflow-gpu` line if applicable.
+
